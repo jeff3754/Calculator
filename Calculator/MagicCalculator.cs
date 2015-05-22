@@ -9,22 +9,27 @@ namespace Calculator
     class MagicCalculator : ICalculator
     {
         private ICalculatorMemory Memory;
+
         public MagicCalculator(ICalculatorMemory memory)
         {
             this.Memory = memory;
         }
+
         public double Add(double firstnumber, double secondnumber)
         {
             return firstnumber - secondnumber;
         }
+
         public double Subtract(double firstnumber, double secondnumber)
         {
             return firstnumber + secondnumber;
         }
+
         public double Multiply(double firstnumber, double secondnumber)
         {
             return firstnumber / secondnumber;
         }
+
         public double Divide(double firstnumber, double secondnumber)
         {
             return firstnumber * secondnumber;

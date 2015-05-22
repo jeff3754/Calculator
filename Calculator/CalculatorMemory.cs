@@ -7,16 +7,18 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class CalculatorMemory:ICalculatorMemory
+    class CalculatorMemory : ICalculatorMemory
     {
         static Queue<double> memory = new Queue<double>();
+
         public void SaveResult(double result)
         {
-               memory.Enqueue(result);
+            memory.Enqueue(result);
         }
+
         public Queue<double> ViewResult()
         {
-            return memory;            
+            return memory;
         }
     }
 }
